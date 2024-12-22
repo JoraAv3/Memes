@@ -3,9 +3,9 @@ import { Section } from "../../../components/Section";
 
 export const HowToBuy = () => {
   return (
-    <Section className="flex flex-col items-center justify-center before:w-full before:h-44 relative">
-      <div className="absolute bg-stars bg-contain w-[30%] pt-32 pl-20 right-0 -top-14 bg-no-repeat">
-        <img src="/images/cosmocat.png" alt="" />
+    <Section className="flex flex-col items-center justify-center before:w-full before:h-44 relative z-10">
+      <div className="absolute bg-planets bg-contain w-[30%] pt-20 pl-20 right-0 -top-14 bg-no-repeat">
+        <img src="/images/cosmofrog_ball.png" className="w-10/12 ml-12" alt="" />
       </div>
       <div className="w-[1174px] flex flex-col gap-4 items-center justify-center">
         <div className="flex flex-col justify-center items-center text-[55px] font-Bowlby bg-gradient-to-tr from-[#FCAF54] to-[#FAFDB4] bg-clip-text text-transparent">

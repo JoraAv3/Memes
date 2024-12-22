@@ -1,5 +1,6 @@
 import { BuyAndEarn } from "./components/BuyAndEarn";
 import { FAQ } from "./components/FAQ";
+import { LandingFooter } from "./components/Footer";
 import { HowToBuy } from "./components/HowToBuy";
 import { JoinNow } from "./components/JoinNow";
 import { MemeUniverse } from "./components/MemeUniverse";
@@ -20,6 +21,7 @@ const LandingPage = () => {
       <HowToBuy />
       <PoweredBy />
       <FAQ />
+      <LandingFooter />
     </>
   );
 };
