@@ -31,7 +31,7 @@ export const Accordion = () => {
   const [currentItem, setCurrentItem] = useState<number>();
 
   return (
-    <div className="w-full flex flex-col gap-4">
+    <div className="w-full flex flex-col gap-4 z-10">
       {faqs.map((faq, index) => (
         <div key={faq.question} className="flex flex-col gap-3">
           <div

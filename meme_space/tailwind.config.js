@@ -12,6 +12,9 @@ export default {
         "chart-bg": "url('/images/chart_background.png')",
         "howtobuy-bg": "url('/images/howtobuy_line.png')",
         rocket: "url('/images/rocket.png')",
+        planets: "url('/images/planets.png')",
+        moon: "url('/images/friends_moon.png')",
+        cosmos: "url(/images/cirkatin.png)",
         "cosmo-view": "url('/images/cosmo_view.png')",
         sunshine: "radial-gradient(circle, rgba(255,215,0,1) 0%, rgba(255,69,0,0) 50%)",
         "radial-ellipse":
