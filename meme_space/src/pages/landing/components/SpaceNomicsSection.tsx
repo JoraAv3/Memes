@@ -9,7 +9,7 @@ export const SpaceNomicsSection = () => {
           <img src="/images/cosmofrog.png" className="w-1/5" alt="" />
         </div>
       </div>
-      <div className="w-[1174px] flex flex-col gap-4 items-center justify-center z-10">
+      <div className="w-full xl:w-[1174px] flex flex-col gap-4 items-center justify-center z-10">
         <div className="flex flex-col justify-center items-center text-[32px] xl:text-[55px] font-Bowlby bg-gradient-to-tr from-[#FCAF54] to-[#FAFDB4] bg-clip-text text-transparent">
           <span>Spacenomics</span>
         </div>
@@ -27,8 +27,9 @@ export const SpaceNomicsSection = () => {
             Presale — 30%
           </div>
           <div className="flex flex-col items-center text-[15px]">
-            <span>Allocated for the presale to incentivize early adopters</span>
-            <span>and provide initial liquidity.</span>
+            <span className="text-center">
+              Allocated for the presale to incentivize early adopters and provide initial liquidity.
+            </span>
           </div>
         </div>
       </div>
