@@ -68,7 +68,7 @@ export const SpaceNomics = () => {
           responsive: true,
           maintainAspectRatio: false, // Отключаем автоматическое масштабирование
           layout: {
-            padding: 120, // Отступы внутри графика
+            padding: 65, // Отступы внутри графика
           },
           cutout: "5%",
           plugins: {
@@ -88,16 +88,15 @@ export const SpaceNomics = () => {
               const { width, height } = chartArea;
               const centerX = (chartArea.left + chartArea.right) / 2;
               const centerY = (chartArea.top + chartArea.bottom) / 2;
-              const radius = Math.min(width, height) / 2; // Радиус круга
+              const radius = Math.min(width, height) / 2;
 
-              // Лейблы
               data.labels.forEach((label, i) => {
                 const angle =
                   (chart.getDatasetMeta(0).data[i].startAngle +
                     chart.getDatasetMeta(0).data[i].endAngle) /
-                  2; // Средний угол сегмента
-                const x = centerX + Math.cos(angle) * (radius + 45); // Позиция по X
-                const y = centerY + Math.sin(angle) * (radius + 40); // Позиция по Y
+                  2;
+                const x = centerX + Math.cos(angle) * (radius + 45);
+                const y = centerY + Math.sin(angle) * (radius + 40);
                 const labelParts = label.split(" ");
                 const percent = labelParts.pop();
 
@@ -141,7 +140,7 @@ export const SpaceNomics = () => {
 
   return (
     <div className="w-[450px] xl:w-[600px] h-[450px] xl:h-[600px] m-auto">
-      <canvas ref={chartRef}></canvas>
+      <canvas ref={chartRef} />
     </div>
   );
 };
