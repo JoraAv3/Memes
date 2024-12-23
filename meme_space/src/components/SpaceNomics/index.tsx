@@ -96,13 +96,13 @@ export const SpaceNomics = () => {
                   (chart.getDatasetMeta(0).data[i].startAngle +
                     chart.getDatasetMeta(0).data[i].endAngle) /
                   2; // Средний угол сегмента
-                const x = centerX + Math.cos(angle) * (radius + 80); // Позиция по X
-                const y = centerY + Math.sin(angle) * (radius + 60); // Позиция по Y
+                const x = centerX + Math.cos(angle) * (radius + 45); // Позиция по X
+                const y = centerY + Math.sin(angle) * (radius + 40); // Позиция по Y
                 const labelParts = label.split(" ");
                 const percent = labelParts.pop();
 
                 ctx.save();
-                ctx.font = "20px Finlandica";
+                ctx.font = "0.8em Finlandica";
                 ctx.fillStyle = "#fff";
                 ctx.textAlign = "center";
                 ctx.textBaseline = "middle";
@@ -110,7 +110,7 @@ export const SpaceNomics = () => {
                   const yCoord = i === 0 ? y - 12 : y + 12;
                   ctx.fillText(labelParts[i], x, yCoord);
                 }
-                ctx.font = "bold 20px Arial";
+                ctx.font = "bold 0.8em Arial";
                 ctx.fillStyle = "#FFA500";
                 ctx.fillText(
                   percent,
@@ -140,7 +140,7 @@ export const SpaceNomics = () => {
   }, [chartRef.current]);
 
   return (
-    <div className="w-[600px] h-[600px] m-auto">
+    <div className="w-[450px] xl:w-[600px] h-[450px] xl:h-[600px] m-auto">
       <canvas ref={chartRef}></canvas>
     </div>
   );

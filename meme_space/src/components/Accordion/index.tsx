@@ -36,7 +36,7 @@ export const Accordion = () => {
         <div key={faq.question} className="flex flex-col gap-3">
           <div
             onClick={() => setCurrentItem((item) => (item === index ? undefined : index))}
-            className="flex items-center justify-between w-full text-[#FCAF54] cursor-pointer text-2xl"
+            className="flex items-center justify-between w-full text-[#FCAF54] cursor-pointer text-[15px] xl:text-2xl"
           >
             <span>{`${index + 1}. ${faq.question}`}</span>
             <span>{(currentItem === index && "-") || "+"}</span>
