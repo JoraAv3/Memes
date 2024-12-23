@@ -12,10 +12,10 @@ const items = [
 export const PoweredBy = () => {
   return (
     <Section className="flex flex-col gap-4 items-center w-full justify-center mb-14 mt-24  relative z-0">
-      <div className="absolute bg-moon bg-contain w-full max-h-[940px] z-0 h-[500px] pt-12 pr-20 left-0 -top-96 bg-no-repeat before:h-10 before:absolute before:w-[40%] before:top-0 before:bg-gradient-to-t before:to-black before:from-transparent">
+      <div className="absolute hidden xl:block bg-moon bg-contain w-full max-h-[940px] z-0 h-[500px] pt-12 pr-20 left-0 -top-96 bg-no-repeat before:h-10 before:absolute before:w-[40%] before:top-0 before:bg-gradient-to-t before:to-black before:from-transparent">
         <img src="/images/cosmofriends.png" className="h-full z-0 relative" alt="" />
       </div>
-      <div className="z-10 flex flex-col justify-center items-center text-[55px] font-Bowlby bg-gradient-to-tr from-[#FCAF54] to-[#FAFDB4] bg-clip-text text-transparent">
+      <div className="z-10 flex flex-col justify-center items-center text-[32px] xl:text-[55px] font-Bowlby bg-gradient-to-tr from-[#FCAF54] to-[#FAFDB4] bg-clip-text text-transparent">
         <span>Powered By</span>
       </div>
       <div className="w-full">
