@@ -1,3 +1,4 @@
+import { Header } from "../../components/Header";
 import { BuyAndEarn } from "./components/BuyAndEarn";
 import { FAQ } from "./components/FAQ";
 import { LandingFooter } from "./components/Footer";
@@ -11,7 +12,8 @@ import { SpaceNomicsSection } from "./components/SpaceNomicsSection";
 
 const LandingPage = () => {
   return (
-    <>
+    <main className="w-full min-h-screen text-[#FFE6E3] bg-black bg-background-top bg-[center_top] bg-no-repeat">
+      <Header className="py-[40px] sm:py-[60px] w-full xl:w-[1174px] mx-auto" />
       <BuyAndEarn />
       <JoinNow />
       <MemeUniverse />
@@ -26,7 +28,7 @@ const LandingPage = () => {
         <img src="/images/footer/footer_left.png" alt="" className="w-3/5 h-auto" />
         <img src="/images/footer/footer_right.png" alt="" className="w-2/5" />
       </div>
-    </>
+    </main>
   );
 };
 

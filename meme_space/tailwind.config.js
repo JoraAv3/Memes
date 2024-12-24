@@ -47,6 +47,9 @@ export default {
       textShadow: {
         light: "2px 2px 5px #FCAF54",
       },
+      colors: {
+        primary: "white",
+      },
     },
   },
   plugins: [

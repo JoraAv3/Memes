@@ -11,8 +11,8 @@ export const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<LandingPage />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route element={<Layout />}>
           <Route path="/auth" element={<AuthenticationPage />} />
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/buy" element={<BuyPage />} />

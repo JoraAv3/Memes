@@ -16,7 +16,7 @@ export const Navbar = () => {
       </div>
       <div
         className={clsx(
-          "xl:hidden w-full h-full bg-black left-0 z-40",
+          "xl:hidden w-full h-full bg-white left-0 z-40",
           "transform opacity-0 transition ease-out duration-500",
           !showMenu && "-top-[1000px] absolute",
           showMenu && "top-0 opacity-50 fixed"
@@ -24,8 +24,8 @@ export const Navbar = () => {
       />
       <nav
         className={clsx(
-          "flex flex-col gap-4 w-[90%] uppercase text-[#FCAF54] bg-black rounded items-center justify-start",
-          "z-50 h-[94dvh] mx-[5%] my-[3dvh] left-0 right-0 p-4 shadow-xl transform transition-all duration-300 ease-linear",
+          "flex flex-col gap-4 w-[96%] uppercase text-[#FCAF54] bg-black rounded items-center justify-start",
+          "z-50 h-[98dvh] mx-[2%] my-[1dvh] left-0 right-0 p-4 shadow-xl transform transition-all duration-300 ease-linear",
           "xl:flex-row xl:top-auto xl:gap-8 xl:relative xl:w-auto xl:bg-transparent xl:rounded-none xl:h-auto xl:mx-0 xl:my-0 xl:shadow-none",
           !showMenu && "-top-[1000px] absolute",
           showMenu && "top-0 fixed"
