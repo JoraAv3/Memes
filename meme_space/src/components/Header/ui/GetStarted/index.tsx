@@ -1,5 +1,6 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import { ButtonTransparent } from "../../../ButtonTransparent";
 
 export const GetStartedButton = () => {
   const navigate = useNavigate();
@@ -8,13 +9,5 @@ export const GetStartedButton = () => {
     navigate("/auth");
   }, [navigate]);
 
-  return (
-    <button
-      type="button"
-      className="border-none bg-black w-full h-full flex items-center justify-center rounded-[4px]"
-      onClick={onClick}
-    >
-      Get Started
-    </button>
-  );
+  return <ButtonTransparent onClick={onClick}>Get Started</ButtonTransparent>;
 };
