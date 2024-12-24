@@ -12,13 +12,7 @@ export const SpaceMap = () => {
         </div>
       </div>
       <div className="grow relative hidden xl:block">
-        <img className="absolute -left-[46px] top-[62%]" src="/images/dot.png" alt="" />
-        <img
-          className="relative w-full scale-x-[1.25]"
-          src="/images/svg/spacemap_lines.svg"
-          alt=""
-        />
-        <img className="absolute -right-[46px] top-[26%]" src="/images/dot.png" alt="" />
+        <img className="relative w-full scale-[1.8]" src="/images/spacemap_lines.png" alt="" />
       </div>
       <div className="flex flex-row items-center gap-4">
         <CircleWithRays number="02" />
@@ -31,13 +25,7 @@ export const SpaceMap = () => {
         </div>
       </div>
       <div className="grow relative hidden xl:block">
-        <img className="absolute -left-[46px] top-[62%]" src="/images/dot.png" alt="" />
-        <img
-          className="relative w-full scale-x-[1.25]"
-          src="/images/svg/spacemap_lines.svg"
-          alt=""
-        />
-        <img className="absolute -right-[46px] top-[26%]" src="/images/dot.png" alt="" />
+        <img className="relative w-full scale-[1.8]" src="/images/spacemap_lines.png" alt="" />
       </div>
       <div className="flex flex-row items-center gap-4">
         <CircleWithRays number="03" />
