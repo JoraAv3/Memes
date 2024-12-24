@@ -24,7 +24,7 @@ export const MemeUniverse = () => {
         </div>
         <div className="relative w-full">
           <img
-            className="absolute left-[42px] xl:left-[232px] -top-[25px] xl:-top-[100px]"
+            className="absolute hidden xl:block left-[232px] -top-[25px] xl:-top-[100px]"
             src="/images/dot.png"
             alt=""
           />
@@ -39,7 +39,7 @@ export const MemeUniverse = () => {
             alt=""
           />
           <img
-            className="absolute right-[45px] -bottom-[20px] xl:right-[136px] xl:bottom-auto"
+            className="absolute hidden xl:block right-[45px] -bottom-[20px] xl:right-[136px] xl:bottom-auto"
             src="/images/dot.png"
             alt=""
           />
@@ -57,7 +57,7 @@ export const MemeUniverse = () => {
         </div>
         <div className="relative w-full">
           <img
-            className="absolute left-[40px] xl:left-[146px] bottom-[-5px] xl:bottom-auto xl:top-2"
+            className="absolute hidden xl:block left-[40px] xl:left-[146px] bottom-[-5px] xl:bottom-auto xl:top-2"
             src="/images/dot.png"
             alt=""
           />
@@ -72,7 +72,7 @@ export const MemeUniverse = () => {
             alt=""
           />
           <img
-            className="absolute right-[48px] xl:right-[226px] top-[36px] xl:-top-[120px]"
+            className="absolute hidden xl:block right-[48px] xl:right-[226px] top-[36px] xl:-top-[120px]"
             src="/images/dot.png"
             alt=""
           />
@@ -91,7 +91,7 @@ export const MemeUniverse = () => {
         </div>
         <div className="relative w-full">
           <img
-            className="absolute left-[68px] xl:left-[72px] -top-[14px] xl:-top-[20px]"
+            className="absolute hidden xl:block left-[68px] xl:left-[72px] -top-[14px] xl:-top-[20px]"
             src="/images/dot.png"
             alt=""
           />
@@ -106,7 +106,7 @@ export const MemeUniverse = () => {
             alt=""
           />
           <img
-            className="absolute right-[64px] xl:right-6 -bottom-[18px] xl:bottom-auto xl:top-4"
+            className="absolute hidden xl:block right-[64px] xl:right-6 -bottom-[18px] xl:bottom-auto xl:top-4"
             src="/images/dot.png"
             alt=""
           />
