@@ -1,9 +1,13 @@
 import clsx from "clsx";
 import { LogoIcon } from "../../assets/icons/LogoIcon";
 import { Navbar } from "./Navbar";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { GetStartedButton } from "./ui/GetStarted";
+import { ConnectWalletButton } from "./ui/ConnectWallet";
 
 export const Header: React.FC<{ className?: string }> = ({ className }) => {
+  const { pathname } = useLocation();
+
   return (
     <header
       className={clsx(
@@ -18,12 +22,8 @@ export const Header: React.FC<{ className?: string }> = ({ className }) => {
       </div>
       <Navbar />
       <div className="w-32 sm:w-40 h-10 sm:h-14 bg-gradient-to-r from-[#FCAF54] to-[#FAFDB4] p-0.5 rounded-[4px] sm:order-3 order-2">
-        <button
-          type="button"
-          className="border-none bg-black w-full h-full flex items-center justify-center rounded-[4px]"
-        >
-          Get Started
-        </button>
+        {pathname === "/" && <GetStartedButton />}
+        {pathname === "/auth" && <ConnectWalletButton />}
       </div>
     </header>
   );
