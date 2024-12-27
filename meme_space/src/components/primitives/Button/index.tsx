@@ -12,7 +12,7 @@ export const Button: React.FC<{
         className
       )}
     >
-      <button type="button" className="uppercase  px-10 py-4" onClick={onClick}>
+      <button type="button" className="uppercase  px-10 py-4 outline-none" onClick={onClick}>
         {children}
       </button>
     </div>
