@@ -25,7 +25,7 @@ export const Header: React.FC<{ className?: string }> = ({ className }) => {
         <Navbar />
 
         {pathname === "/" && <GetStartedButton />}
-        {pathname === "/auth" && <ConnectWalletButton />}
+        {pathname !== "/" && <ConnectWalletButton />}
       </header>
     </Section>
   );

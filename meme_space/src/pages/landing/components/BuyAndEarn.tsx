@@ -1,8 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import { CountDown } from "../../../components/CountDown";
 import { Button } from "../../../components/primitives/Button";
 import { Section } from "../../../components/Section";
 
 export const BuyAndEarn = () => {
+  const navigate = useNavigate();
+
   return (
     <Section className="flex flex-col gap-[200px] xl:gap-[408px] items-center justify-between relative bg-meme-space bg-90% xl:bg-auto bg-no-repeat bg-center-t xl:bg-center mb-14 xl:mb-14 px-4 xl:px-0">
       <img
@@ -29,7 +32,7 @@ export const BuyAndEarn = () => {
       <div className="flex flex-col items-center gap-4">
         <div className="text-4xl text-[#FFFFD2] font-bold">Next Price</div>
         <CountDown />
-        <Button onClick={() => console.log("Buy & Earn")}>Buy & Earn</Button>
+        <Button onClick={() => navigate("/buy")}>Buy & Earn</Button>
       </div>
     </Section>
   );

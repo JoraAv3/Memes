@@ -12,13 +12,16 @@
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
   },
   "dependencies": {
+    "@types/react-slick": "^0.23.13",
     "chartjs-plugin-datalabels": "^2.2.0",
     "clsx": "^2.1.1",
     "react": "^18.3.1",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.3.1",
     "react-fast-marquee": "^1.6.5",
-    "react-router-dom": "^7.0.2"
+    "react-router-dom": "^7.0.2",
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",

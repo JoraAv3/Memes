@@ -1,12 +1,21 @@
+import clsx from "clsx";
 import { Button } from "../../../components/primitives/Button";
 import { Section } from "../../../components/Section";
 
-export const HowToBuy = () => {
+export const HowToBuy: React.FC<{ rightImageHidden?: boolean }> = ({ rightImageHidden }) => {
   return (
-    <Section className="flex flex-col items-center justify-center after:w-full after:h-96 xl:after:hidden after:absolute after:top-0 after:bg-stars xl:after:bg-none after:bg-90% after:bg-[-400%_50%] after:bg-no-repeat bg-stars bg-90% bg-[470%_50%] xl:bg-none bg-no-repeat before:w-full before:h-24 xl:before:h-44 relative z-10 px-6 xl:px-0">
-      <div className="absolute bg-planets bg-contain w-[30%] pt-20 pl-20 right-0 -top-14 bg-no-repeat hidden xl:block">
-        <img src="/images/cosmofrog_ball.png" className="w-10/12 ml-12" alt="" />
-      </div>
+    <Section
+      className={clsx(
+        "flex flex-col items-center justify-center  bg-stars bg-90% bg-[470%_50%] xl:bg-none bg-no-repeat relative z-10 px-6 xl:px-0",
+        "before:w-full before:h-24 xl:before:h-44",
+        "after:w-full after:h-96 xl:after:hidden after:absolute after:top-0 after:bg-stars xl:after:bg-none after:bg-90% after:bg-[-400%_50%] after:bg-no-repeat"
+      )}
+    >
+      {!rightImageHidden && (
+        <div className="absolute bg-planets bg-contain w-[30%] pt-20 pl-20 right-0 -top-14 bg-no-repeat hidden xl:block">
+          <img src="/images/cosmofrog_ball.png" className="w-10/12 ml-12" alt="" />
+        </div>
+      )}
       <div className="w-full xl:w-[1174px] flex flex-col gap-4 items-center justify-center">
         <div className="flex flex-col justify-center items-center text-[32px] xl:text-[55px] font-Bowlby bg-gradient-to-tr from-[#FCAF54] to-[#FAFDB4] bg-clip-text text-transparent">
           <span>How to Buy</span>
