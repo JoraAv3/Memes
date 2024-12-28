@@ -6,6 +6,8 @@ import { ReferalsPage } from "./pages/friends";
 import { BuyPage } from "./pages/buy";
 import { EarnPage } from "./pages/earn";
 import { ProfilePage } from "./pages/profile";
+import { TasksPage } from "./pages/tasks";
+import { ProductsPage } from "./pages/products";
 
 export const App: React.FC = () => {
   return (
@@ -18,6 +20,8 @@ export const App: React.FC = () => {
           <Route path="/buy" element={<BuyPage />} />
           <Route path="/earn" element={<EarnPage />} />
           <Route path="/referals" element={<ReferalsPage />} />
+          <Route path="/tasks" element={<TasksPage />} />
+          <Route path="/products" element={<ProductsPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
