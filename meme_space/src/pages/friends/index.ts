@@ -1,5 +1,5 @@
 import React from "react";
 
-const FriendsPage = React.lazy(() => import("./FriendsPage"));
+const ReferalsPage = React.lazy(() => import("./ReferalsPage"));
 
-export { FriendsPage };
+export { ReferalsPage };

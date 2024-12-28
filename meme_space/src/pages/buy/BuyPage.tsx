@@ -11,6 +11,11 @@ import "../../custom_swiper.css";
 import { CustomSlider } from "../../components/CustomSlider";
 import { clsx } from "clsx";
 import { HowToBuy } from "../landing/components/HowToBuy";
+import { BasketIcon } from "../../assets/icons/Basket";
+import { TasksIcon } from "../../assets/icons/Tasks";
+import { GiftsIcon } from "../../assets/icons/Gifts";
+import { ReferalsIcon } from "../../assets/icons/Referals";
+import { ProfileIcon } from "../../assets/icons/Profile";
 
 const BuyPage = () => {
   const [fromValue, setFromValue] = useState<string>("");
