@@ -49,6 +49,8 @@ export default {
       },
       colors: {
         primary: "white",
+        "static-icon": "#ACA9A9",
+        "active-icon": "#FCAF54",
       },
     },
   },

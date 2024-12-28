@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { Header } from "../Header";
 import { Section } from "../Section";
+import { Footer } from "../Footer";
 
 export const Layout = () => {
   return (
@@ -10,6 +11,8 @@ export const Layout = () => {
           <Header className="py-[40px] sm:py-[60px] w-full xl:w-[1174px] mx-auto" />
         </Section>
         <Outlet />
+        <div className="h-24" />
+        <Footer />
       </main>
     </div>
   );

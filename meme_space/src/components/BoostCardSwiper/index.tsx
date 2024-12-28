@@ -29,11 +29,8 @@ export const BoostCardSwiper: React.FC<{ cards: Card[]; id: number }> = ({ cards
   return (
     <Slider {...settings} key={id} className="w-full xl:w-[1124px] mb-12">
       {cards.map((card) => (
-        <div className="w-full">
-          <div
-            key={card.id}
-            className="flex flex-col px-5 pb-4 gap-2 w-40 xl:w-64 bg-[#272727] rounded-3xl text-white overflow-hidden mx-1 text-center"
-          >
+        <div key={card.id} className="w-full">
+          <div className="flex flex-col px-5 pb-4 gap-2 w-40 xl:w-64 bg-[#272727] rounded-3xl text-white overflow-hidden mx-1 text-center">
             <div className="bg-[#DD3333] text-sm font-bold rounded-b-2xl text-center w-9/12 m-auto px-6">
               8 Left
             </div>
